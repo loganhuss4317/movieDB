@@ -73,6 +73,9 @@ li {
 form {
   border-radius: 25px;
   position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -122,10 +125,6 @@ input {
 
 #landing {
   background-color: white;
-}
-
-header {
-  height: calc(100vh - 80px);
 }
 
 h1 {
