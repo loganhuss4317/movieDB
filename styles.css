@@ -55,6 +55,7 @@ li {
   text-align: center;
   align-items: center;
   margin: 0 auto;
+  padding: 0;
 }
 
 form {
@@ -74,7 +75,12 @@ input {
   padding: 8px 40px 8px 20px;
 }
 
-#nav {
+p {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 /*  Navigation */
@@ -95,10 +101,6 @@ input {
 .movie__logo {
   height: 100px;
   width: 100px;
-}
-
-.search__btn {
-
 }
 
 h1 {
@@ -130,7 +132,13 @@ button {
 /* Movies */
 
 #movies {
-  
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+  padding-top: 48px;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 
 .search-list {
@@ -160,21 +168,7 @@ button {
   padding: 2px 16px;
 }
 
-.post-card {
-  background-color: #fff;
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.post-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.post-card__container {
-  padding: 2px 16px;
-}
+.search
 
 /* responsive for small phones, tablets & large phones */
 

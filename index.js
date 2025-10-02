@@ -6,18 +6,19 @@ const movieData = await searchMovie.json();
 const searchList = document.querySelector('.search-list');
 console.log(movieData)
 searchList.innerHTML = 
-    movieData.Search.map(
-    (search) => 
-        `<div class="search-card">
+    movieData.Search.map((search) => searchHTML(search)).join("")
+}
+
+main();
+
+function searchHTML(search) {
+    return `<div class="search-card">
             <div class="search__container">
                 <h3>Movie</h3>
                 <p><b>${search.Title}</b></p>
                 <p><b>Year:</b> ${search.Year}</p>
                 <p><b>imdbID:</b> ${search.imdbID}</p>
-                <p><b>Poster:</b> ${search.Poster}</p>
+                <img src="${search.Poster}"/>
             </div>
-        </div>`
-    ).join("")
+        </div>`;
 }
-
-main();
