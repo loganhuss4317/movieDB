@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* General */
+
 * {
   padding: 0;
   margin: 0;
@@ -139,12 +140,17 @@ button {
   padding-top: 48px;
   flex-wrap: wrap;
   justify-content:center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .search-list {
   width: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .search {
@@ -167,8 +173,6 @@ button {
 .search-card__container {
   padding: 2px 16px;
 }
-
-.search
 
 /* responsive for small phones, tablets & large phones */
 
@@ -193,8 +197,6 @@ button {
         font-size: 18px;
     }
 }
-
-
 
 /* small phones */
 

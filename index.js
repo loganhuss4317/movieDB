@@ -15,7 +15,7 @@ console.log(Title);                                                             
 }
 
 function searchHTML(search) {
-    return `<div class="search-card" onsearch="showMovies(${search.Title})">
+    return `<div class="search-card" onclick="showMovies(${search.Title})">
             <div class="search__container">
                 <h3>Movie</h3>
                 <p><b>${search.Title}</b></p>
@@ -25,3 +25,4 @@ function searchHTML(search) {
             </div>
         </div>`;
 }
+
