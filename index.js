@@ -4,8 +4,8 @@ async function getMovieData() {
 const getData = await fetch("https://www.omdbapi.com/?s=fast&apikey=f5814458")
 const movieData = await getData.json();
 const searchList = document.querySelector('.search-list');
-console.log(searchList.innerHTML = 
-    movieData.Search.map((search) => searchHTML(search)).join(""))
+searchList.innerHTML = 
+    movieData.Search.map((search) => searchHTML(search)).join("")
 }
 
 getMovieData();  
@@ -13,6 +13,8 @@ getMovieData();
 function showMovieTitle(search) {
     console.log(search);
 }
+
+showMovieTitle()
 
 function searchHTML(search) {
     return `<div class="search-card" onclick="showMovies(${search.id})">
