@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+   <script src="index2.js"></script>
+    <style>
+        /* Basic styling for better readability */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #results { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
+        .movie-card { border: 1px solid #eee; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        .movie-card h3 { margin-top: 0; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Finder 🎬</h1>
+
+    <form id="movieSearchForm">
+        <label for="movieTitle">Enter Movie Title:</label>
+        <input type="text" id="movieTitle" name="movieTitle" required placeholder="e.g., Inception">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="results">
+        </div>
+</body>
+</html>

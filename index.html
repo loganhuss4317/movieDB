@@ -24,9 +24,9 @@
     <section id="form">
             <div class="container">
                 <h1>Browse Movies</h1>
-                <form>
-                    <input type="text" placeholder="Search Movies by Title" class="input__field" name="s">
-                    <button type="submit" class="search__btn"><i class="fa fa-search"></i></button>
+                <form id="search-form">
+                    <input type="text" placeholder="Search Movies by Title..." id="movie-title-input" name="s" required>
+                    <button type="submit" class="search__btn" id="btn"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </section>
@@ -36,12 +36,11 @@
                 <div class="search-list">
                     <div class="search">
                        <div class="search-card">
-                          <div class="search__container">
-                        <h3>Movie</h3>
-                        <p><b>Title</b> Title</p>
-                        <p><b>Year</b> Year</p>
-                        <p><b>imdbID</b> imdbID</p>
-                        <p><b>Poster</b> Poster</p>
+                          <div class="search__container" id="results-container">
+                            <p><b>Title</b> Title</p>
+                            <p><b>Year</b> Year</p>
+                            <p><b>imdbID</b> imdbID</p>
+                            <p><b>Poster</b> Poster</p>
                     </div>
                 </div> 
             </div> 
