@@ -20,6 +20,9 @@ form.addEventListener('submit', async (event) => {
     }
 });
 
+// Event listenser for form clear
+form.addEventListener()
+
 /**
  * Function to call the OMDb API and search for movies.
  * @param {string} title - The title of the movie to search for
