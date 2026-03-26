@@ -21,7 +21,10 @@ form.addEventListener('submit', async (event) => {
 });
 
 // Event listenser for form clear
-form.addEventListener()
+form.addEventListener('reset', () => {
+    resultsContainer.innerHTML = ''; // This wipes the movie results off the screen
+    console.log('Search cleared!');
+});
 
 /**
  * Function to call the OMDb API and search for movies.
